@@ -1,0 +1,32 @@
+meta {
+  name: Just Made It
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/apis/serp_api/v2/seo/getJustMadeItKeywords?query={{domain}}&countryCode={{countryCode}}
+  body: none
+  auth: none
+}
+
+query {
+  query: {{domain}}
+  sortBy: 
+  sortOrder: 
+  startingRow: 
+  pageSize: 
+  countryCode: {{countryCode}}
+  adultFilter: 
+  onlyAdultKeywords: 
+  excludeHomepageKeywords: 
+  keywordDifficulty.min: 
+  keywordDifficulty.max: 
+  adCount.min: 
+  adCount.max: 
+  searchVolume.min: 
+  searchVolume.max: 
+  includeTerms: 
+  includeAnyTerm: 
+  excludeTerms: 
+}

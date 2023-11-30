@@ -1,0 +1,32 @@
+meta {
+  name: SEO Keywords by Value
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/apis/serp_api/v2/seo/getMostValuableKeywords?query={{domain}}&countryCode={{countryCode}}
+  body: none
+  auth: none
+}
+
+query {
+  query: {{domain}}
+  sortBy: 
+  sortOrder: 
+  startingRow: 
+  pageSize: 
+  countryCode: {{countryCode}}
+  adultFilter: 
+  onlyAdultKeywords: 
+  excludeHomepageKeywords: 
+  keywordDifficulty.min: 
+  keywordDifficulty.max: 
+  adCount.min: 
+  adCount.max: 
+  searchVolume.min: 
+  searchVolume.max: 
+  includeTerms: 
+  includeAnyTerm: 
+  excludeTerms: 
+}
