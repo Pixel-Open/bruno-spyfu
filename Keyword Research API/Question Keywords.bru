@@ -1,0 +1,21 @@
+meta {
+  name: Question Keywords
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/apis/keyword_api/v2/related/getQuestionKeywords?query={{keywords}}&pageSize=100&countryCode={{countryCode}}
+  body: none
+  auth: none
+}
+
+query {
+  query: {{keywords}}
+  sortBy: 
+  sortOrder: 
+  startingRow: 
+  pageSize: 100
+  countryCode: {{countryCode}}
+  adultFilter: 
+}

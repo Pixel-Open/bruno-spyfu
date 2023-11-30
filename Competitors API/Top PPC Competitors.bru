@@ -1,0 +1,18 @@
+meta {
+  name: Top PPC Competitors
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/apis/competitors_api/v2/ppc/getTopCompetitors?domain={{domain}}&countryCode={{countryCode}}
+  body: none
+  auth: none
+}
+
+query {
+  domain: {{domain}}
+  startingRow: 
+  pageSize: 
+  countryCode: {{countryCode}}
+}

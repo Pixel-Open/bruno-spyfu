@@ -1,0 +1,18 @@
+meta {
+  name: Domain Stats For Exact Date
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/apis/domain_stats_api/v2/getDomainStatsForExactDate?month=10&year=2023&domain={{domain}}&countryCode={{countryCode}}
+  body: none
+  auth: none
+}
+
+query {
+  month: 10
+  year: 2023
+  domain: {{domain}}
+  countryCode: {{countryCode}}
+}

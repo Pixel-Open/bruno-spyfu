@@ -1,0 +1,16 @@
+meta {
+  name: Latest Domain Stats
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/apis/domain_stats_api/v2/getLatestDomainStats?domain={{domain}}&countryCode={{countryCode}}
+  body: none
+  auth: none
+}
+
+query {
+  domain: {{domain}}
+  countryCode: {{countryCode}}
+}

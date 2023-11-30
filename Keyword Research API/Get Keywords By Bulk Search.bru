@@ -1,0 +1,16 @@
+meta {
+  name: Get Keywords By Bulk Search
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{baseUrl}}/apis/keyword_api/v2/related/getKeywordInformation?keywords={{keywords}}&countryCode={{countryCode}}
+  body: none
+  auth: none
+}
+
+query {
+  keywords: {{keywords}}
+  countryCode: {{countryCode}}
+}

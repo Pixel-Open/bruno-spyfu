@@ -1,0 +1,21 @@
+meta {
+  name: Also Ranks For Keywords
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/apis/keyword_api/v2/related/getAlsoRanksForKeywords?query={{keywords}}&countryCode={{countryCode}}
+  body: none
+  auth: none
+}
+
+query {
+  query: {{keywords}}
+  sortBy: 
+  sortOrder: 
+  startingRow: 
+  pageSize: 
+  countryCode: {{countryCode}}
+  adultFilter: 
+}

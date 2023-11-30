@@ -1,0 +1,21 @@
+meta {
+  name: Related Keywords
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/apis/keyword_api/v2/related/getRelatedKeywords?query={{keywords}}&countryCode={{countryCode}}
+  body: none
+  auth: none
+}
+
+query {
+  query: {{keywords}}
+  sortBy: 
+  sortOrder: 
+  startingRow: 
+  pageSize: 
+  countryCode: {{countryCode}}
+  adultFilter: 
+}

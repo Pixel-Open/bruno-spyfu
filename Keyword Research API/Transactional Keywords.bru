@@ -1,0 +1,21 @@
+meta {
+  name: Transactional Keywords
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/apis/keyword_api/v2/related/getTransactionKeywords?query={{keywords}}&countryCode={{countryCode}}
+  body: none
+  auth: none
+}
+
+query {
+  query: {{keywords}}
+  sortBy: 
+  sortOrder: 
+  startingRow: 
+  pageSize: 
+  countryCode: {{countryCode}}
+  adultFilter: 
+}

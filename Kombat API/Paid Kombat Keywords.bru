@@ -1,0 +1,23 @@
+meta {
+  name: Paid Kombat Keywords
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/apis/keyword_api/v2/kombat/getCompetingPpcKeywords?includeDomainsCsv={{domain}},example.com&isIntersection=true&countryCode={{countryCode}}
+  body: none
+  auth: none
+}
+
+query {
+  includeDomainsCsv: {{domain}},example.com
+  excludeDomainsCsv: 
+  isIntersection: true
+  sortBy: 
+  sortOrder: 
+  startingRow: 
+  pageSize: 
+  countryCode: {{countryCode}}
+  adultFilter: 
+}

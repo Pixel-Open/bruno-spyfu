@@ -1,0 +1,16 @@
+meta {
+  name: Domain Stats For All Time
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/apis/domain_stats_api/v2/getAllDomainStats?domain={{domain}}&countryCode={{countryCode}}
+  body: none
+  auth: none
+}
+
+query {
+  domain: {{domain}}
+  countryCode: {{countryCode}}
+}

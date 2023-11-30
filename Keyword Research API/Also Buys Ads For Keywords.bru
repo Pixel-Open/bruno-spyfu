@@ -1,0 +1,21 @@
+meta {
+  name: Also Buys Ads For Keywords
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/apis/keyword_api/v2/related/getAlsoBuysAdsForKeywords?query={{keywords}}&countryCode={{countryCode}}
+  body: none
+  auth: none
+}
+
+query {
+  query: {{keywords}}
+  sortBy: 
+  sortOrder: 
+  startingRow: 
+  pageSize: 
+  countryCode: {{countryCode}}
+  adultFilter: 
+}

@@ -1,0 +1,27 @@
+meta {
+  name: Most Successful
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/apis/keyword_api/v2/ppc/getMostSuccessful?query={{domain}}&countryCode={{countryCode}}
+  body: none
+  auth: none
+}
+
+query {
+  query: {{domain}}
+  excludeDomain: 
+  includeTerms: 
+  includeAnyTerm: 
+  excludeTerms: 
+  searchVolume.min: 
+  searchVolume.max: 
+  sortBy: 
+  sortOrder: 
+  startingRow: 
+  pageSize: 
+  countryCode: {{countryCode}}
+  adultFilter: 
+}
